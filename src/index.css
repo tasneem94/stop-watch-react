@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  font-size: 16px;
+  background-color: hwb(58 66% 0%);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  margin: 50px 20px 0 20px;
+  padding: 20px 0;
+  border: 5px solid hsl(0, 0%, 10%);
+  border-radius: 50px;
+}
+
+.display {
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px hsl(0, 0%, 30%);
+}
+
+.btn-container button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  min-width: 80px;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: hsl(120, 80%, 42%);
+}
+
+.stop-btn {
+  background-color: hsl(0, 99%, 63%);
+  margin: 0 15px;
+}
+
+.reset-btn {
+  background-color: hsl(199, 100%, 63%);
+}
+
+.start-btn:hover,
+.stop-btn:hover,
+.reset-btn:hover {
+  opacity: 90%;
+  transition: 0.2s ease-in-out;
+}
+
+.start-btn:hover {
+  box-shadow: 0px 0px 5px hsl(120, 80%, 42%);
+}
+
+.stop-btn:hover {
+  box-shadow: 0px 0px 5px hsl(0, 99%, 63%);
+}
+
+.reset-btn:hover {
+  box-shadow: 0px 0px 5px hsl(199, 100%, 63%);
+}
